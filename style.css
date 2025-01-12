@@ -1,0 +1,231 @@
+#navigation {
+    width: 100%;
+    height: 100px;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: white ;
+}
+
+#navigation nav {
+    display: flex;
+    align-items: center;
+}
+
+#navigation nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#navigation ul li {
+    margin: 20px;
+}
+
+#navigation nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 1px;
+    margin-left: 15px;
+}
+
+#navigation nav ul li a:hover {
+    background-color: white;
+    color: darkblue;
+    border-radius: 3px;
+    text-decoration: underline dodgerblue;
+
+}
+
+.backgroundimage {
+    padding: 0 0;
+    margin: 0 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    background: no-repeat;
+    opacity: 0.5; /* 50% transparent */
+    z-index: -10;
+}
+
+.element {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 1);
+    width: 100%;
+}
+.back1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+}
+.information {
+    font-family: sans-serif;
+    margin-left:7rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-right: 50rem;
+    padding-left: 2rem;
+    color: #000000;
+}
+.information h1 {
+    font-family: sans-serif;
+  /*  background: repeating-linear-gradient(to right,white,lightblue,dodgerblue,darkblue);*/
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    color: dodgerblue;
+    text-decoration: underline dodgerblue;
+}
+.background-blue{
+    background: repeating-linear-gradient(to bottom,transparent,white);
+    height: 700px;
+    z-index: 100;
+}
+.information-blue{
+    background-color:white;
+    padding-top: 10px;
+    top: 7rem;
+    color: black;
+    text-decoration: underline dodgerblue;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.style{
+    color: black;
+}
+.map{
+    padding-left: 50rem !important  ;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: blue;
+    text-decoration: underline dodgerblue;
+}
+.image-container{
+    padding-top: 50px;
+    display: inline-block;
+    margin-left: 220px;
+    margin-bottom:200px;
+}
+.styled-button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.styled-button:hover{
+    background-color: blue;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th{
+    background-color: dodgerblue;
+}
+.team-logo{
+    width: 50px;
+    height: 50px;
+}
+.image-sponsor-container{
+    position:relative;
+    width:400px;
+    padding-left: 15rem;
+    margin-top: 100px;
+}
+.image-sponsor-container img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius: 5rem;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    padding-left:25rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 5rem;
+}
+.image-sponsor-container:hover .overlay{
+    opacity: 1;
+}
+
+.diagonal-line {
+    margin-top:4rem;
+    width: 100%;
+    height: 20px;
+    background: repeating-linear-gradient(-45deg, blue 3px, blue 3px, white 10px, white 10px);
+}
+
+.style-mail{
+    padding-left: 10rem;
+    padding-top: 5rem;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+} textarea {
+      height: 150px;
+  }
+label {
+    font-size: 16px;
+
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+}
